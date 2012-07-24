@@ -13,7 +13,7 @@ namespace KVV.Services {
         public SampleModule(IClubRepository clubRepository) {
             _clubRepository = clubRepository;
 
-            var clubs = _clubRepository.GetClubs();
+            var clubs = _clubRepository.GetClubs().ToList();
             Get["/"] = _ => View["index", clubs];
 
         }

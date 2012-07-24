@@ -75,6 +75,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DatabaseCreation.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -89,6 +90,16 @@
     <Compile Include="Repositories\ClubRepository.cs" />
     <Compile Include="Repositories\IClubRepository.cs" />
     <Compile Include="SampleModule.cs" />
+    <Compile Include="Samples\CallingStoredProcedureExamples.cs" />
+    <Compile Include="Samples\Customer.cs" />
+    <Compile Include="Samples\DeleteExamples.cs" />
+    <Compile Include="Samples\FindByExamples.cs" />
+    <Compile Include="Samples\InferredHierarchyExample.cs" />
+    <Compile Include="Samples\InsertExamples.cs" />
+    <Compile Include="Samples\LinqFakeExamples.cs" />
+    <Compile Include="Samples\MagicCastingExamples.cs" />
+    <Compile Include="Samples\SchemaQualifiedSamples.cs" />
+    <Compile Include="Samples\UpdateExamples.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

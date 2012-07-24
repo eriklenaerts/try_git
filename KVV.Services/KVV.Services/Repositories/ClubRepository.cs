@@ -11,7 +11,7 @@ namespace KVV.Services.Repositories {
             var db = Database.Open();
             return db.TblClub
                 .All()
-                .Select(db.TblClub.sClubID.As("Id"), db.TblClub.sClubNaam.As("Name"));
+                .Select(db.TblClub.iClubID.As("Id"), db.TblClub.sClubNaam.As("Name"));
                 
         }
     }
